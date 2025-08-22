@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+ char c;
+
+ cout << "Enter any alphabet : ";
+ cin >> c;
+
+ if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z'){                     //Checks if entered character is alphabet
+    if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||      
+       c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' )//Checks for vowels 
+       {
+       
+       cout << c << " is a vowel." << endl;
+    }
+    else{
+  cout << c << " is a consonant."<<endl;//If not vowel, then it is consonant
+    }
+ 
+} else{                                                                  //invalid, if not alphabet
+    cout << "Invalid Entry! Try again." << endl;
+ }
+
+ return 0;
+}
